@@ -1,6 +1,9 @@
 package tests;
 
+import config.CredentialsConfig;
+import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -10,6 +13,7 @@ import static io.qameta.allure.Allure.step;
 public class TestFormPageObjects extends TestBase {
 
     @Test
+    @Tag("demoqa")
     @DisplayName("Successful filling Student Registration Form")
     void successfulTest() {
 

@@ -52,20 +52,9 @@ tasks.withType(Test) {
     }
 }
 
-task properties_test6(type: Test) {
-    useJUnitPlatform{
-        includeTags "test6"
-    }
-}
 
-task hello_test(type: Test) {
+task demoqa_test(type: Test) {
     useJUnitPlatform{
-        includeTags "hello"
-    }
-}
-
-task owner_test(type: Test) {
-    useJUnitPlatform{
-        includeTags "owner"
+        includeTags "demoqa"
     }
 }
