@@ -33,7 +33,6 @@ public class TestBase {
         String remoteBrowser = System.getProperty("remote", "selenoid.autotests.cloud/wd/hub");
         Configuration.remote = String.format("https://%s:%s@%s", credentialsConfig.login(), credentialsConfig.password(),
                 remoteBrowser);
-
     }
 
     @AfterEach
